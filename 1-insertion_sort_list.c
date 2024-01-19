@@ -23,7 +23,7 @@ void swp_node(listint_t *n1, listint_t *n2)
 */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *s1 ,*s2;
+	listint_t *s1, *s2;
 
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
@@ -32,7 +32,7 @@ void insertion_sort_list(listint_t **list)
 	{
 		s2 = s1;
 		s1 = s1->next;
-		while(s2 != NULL && s2->prev != NULL)
+		while (s2 != NULL && s2->prev != NULL)
 		{
 			if (s2->prev->n > s2->n)
 			{
